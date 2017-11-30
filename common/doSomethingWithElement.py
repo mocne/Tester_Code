@@ -111,7 +111,7 @@ def inputText(el, text):
     el.clear()
     el.send_keys(text)
 
-logging.basicConfig(level=logging.WARNING, filename='../Logs/log.txt' % time.strftime('%Y-%m-%d', time.localtime(time.time())), filemode='w', format='%(asctime)s - 【 %(levelname)s 】 - %(filename)s [ line:%(lineno)d ] : %(message)s')
+# logging.basicConfig(level=logging.WARNING, filename='../Logs/log.txt' % time.strftime('%Y-%m-%d', time.localtime(time.time())), filemode='w', format='%(asctime)s - 【 %(levelname)s 】 - %(filename)s [ line:%(lineno)d ] : %(message)s')
 
 def screenshot2file(driver):
     driver.get_screenshot_as_file('../img/%s.png' % time.strftime('%Y-%m-%d_%H:%M:%S', time.localtime(time.time())))

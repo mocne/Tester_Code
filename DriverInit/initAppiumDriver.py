@@ -3,24 +3,52 @@ import time
 import os
 from appium import webdriver
 import platform
+import common.readYaml
+import common.doSomethingWithElement
+import common.useADB
 
-def initAppiumWithInfo(package, activity):
+def start2test():
+    driver = initAppiumWithInfo()
+    time.sleep(5)
+    el = driver.find_element_by_android_uiautomator("new UiSelector().text('追书社区')")
+    el.click()
 
-    deviceName = os.popen('adb shell getprop ro.serialno').read().strip()
-    deviceSystemVersion = os.popen('adb shell getprop ro.build.version.release').read().strip()
+def initAppiumWithInfo():
+
+    # appName = common.useADB.getAppAutomate().split('.')[0]
+    # apps = common.readYaml.getYam('../YAML/appInfo.yml')
+    # appPackage = apps[appName]['PackageName']
+    # appActivity = apps[appName]['LanchableActivity']
+
+    # os.system('adb uninstall ' + appPackage)
+    # os.system('adb install ' + dir + '\\app\\' + app)
+
+    appPackage, appActivity = common.useADB.justGetAppInfo()
+
+    deviceSystemVersion = os.popen('adb shell getprop ro.build.version.release').read().strip().split('*')[-1]
+    tmp = deviceSystemVersion.split('.')
+    if len(tmp) > 2:
+        bigV = float(tmp[0] + '.' + tmp[1])
+        if bigV < 4.4:
+            automationName = 'Selendroid'
+        else:
+            automationName = 'Appium'
+
+    deviceName = os.popen('adb get-serialno').read().strip()
+
 
     desired_caps = {
         'platformName': 'Android',
         'platformVersion': deviceSystemVersion,
         'deviceName': deviceName,
-        'udid': '',                                     # 连接的物理设备的唯一设备标识,Android可以不设置
-        'app': '',
-        'appPackage': package,
-        'appActivity': activity,
-        'appWaitActivity': '',                          # 你想要等待启动的Android Activity名称
+        # 'udid': '',                                     # 连接的物理设备的唯一设备标识,Android可以不设置
+        # 'app': '',
+        'appPackage': appPackage,
+        'appActivity': appActivity,
+        'appWaitActivity': appActivity,                          # 你想要等待启动的Android Activity名称
         'newCommandTimeout': 300,
-        'browserName': '',
-        'automationName': 'Appium',                     # 你想使用的自动化测试引擎：Appium (默认) 或 Selendroid(4.4以下可使用)
+        # 'browserName': '',
+        'automationName': 'appium',                     # 你想使用的自动化测试引擎：Appium (默认) 或 Selendroid(4.4以下可使用)
         'unicodeKeyboard': 'True',                      # 支持中文输入，会自动安装Unicode 输入法。默认值为 false
         "resetKeyboard": "True",                        # 在设定了 unicodeKeyboard 关键字的 Unicode 测试结束后，重置输入法到原有状态
         'noReset': True,
@@ -30,17 +58,18 @@ def initAppiumWithInfo(package, activity):
     driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_capabilities=desired_caps, browser_profile=None, proxy=None, keep_alive=True)
     time.sleep(5)
     print('************************ start **************************')
+    driver.find_element_by_android_uiautomator('new')
     return driver
 
 def kill_appium():
-    if platform.system() == 'Windows':      # windows操作系统
+    if platform.system() == 'Darwin':      # Mac 操作系统
         os.popen('lsof -n -i:4723 | grep LISTEN | awk \'{print $2}\' | xargs kill')
         os.popen('ps -A | grep node | grep -v grep | awk \'NR=1 {print $1}\' | xargs kill -9')
-    elif platform.system() == 'Darwin':     # Mac 操作系统
-        os.popen('taskkill /f /fi "imagename eq node.exe"')
+    elif platform.system() == 'Windows':     # Windows操作系统
+        os.system('taskkill /f /fi "imagename eq node.exe"')
 
 def start_appium():
-    os.popen('appium --address 127.0.0.1 --port 4723 --bootstrap-port 4725 --session-override')
+    os.system('appium --address 127.0.0.1 --port 4723 --bootstrap-port 4725 --session-override --no-reset')
 
 '''# 下拉刷新20次
 for i in range(0, 20):
@@ -108,4 +137,6 @@ double elementHight = element.Size.Height; //获取元素的宽度
 '''
 
 if __name__ == '__main__':
-    initAppiumWithInfo('package', 'activity')
+    # kill_appium()
+    # start_appium()
+    start2test()

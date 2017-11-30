@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc36b8bb-add3-435c-88b0-161b0682b6f0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/aidai_TEC_QA.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DriverInit/initSelendroidDriver.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/SQLhandle/DataDrivenByMySQL.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/SQLhandle/DatabaseInit.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/SQLhandle/MysqlUtil.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/SQLhandle/Sql.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/SQLhandle/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Tester_Code.iml" afterPath="$PROJECT_DIR$/.idea/Tester_Code.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DriverInit/initAppiumDriver.py" afterPath="$PROJECT_DIR$/DriverInit/initAppiumDriver.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/doSomethingWithElement.py" afterPath="$PROJECT_DIR$/common/doSomethingWithElement.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/useADB.py" afterPath="$PROJECT_DIR$/common/useADB.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,6 +22,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Tester_Code$initAppiumDriver.coverage" NAME="initAppiumDriver Coverage Results" MODIFIED="1512020568989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DriverInit" />
+    <SUITE FILE_PATH="coverage/Tester_Code$useADB.coverage" NAME="useADB Coverage Results" MODIFIED="1512018414741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/Tester_Code$Unittests_for_initSelendroidDriver_FindElementTest.coverage" NAME="Unittests for initSelendroidDriver.FindElementTest Coverage Results" MODIFIED="1512031830984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DriverInit" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -22,22 +37,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="useADB.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="useADB.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/useADB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="601">
+              <caret line="135" column="24" lean-forward="false" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="24" />
+              <folding>
+                <element signature="e#107#312#0" expanded="false" />
+                <element signature="e#341#1294#0" expanded="false" />
+                <element signature="e#373#832#0" expanded="false" />
+                <element signature="e#1326#1338#0" expanded="false" />
+                <element signature="e#1437#2746#0" expanded="false" />
+                <element signature="e#4007#4085#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdbCommon.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Base/AdbCommon.py">
+      <file leaf-file-name="initSelendroidDriver.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DriverInit/initSelendroidDriver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="150">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#16#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initAppiumDriver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DriverInit/initAppiumDriver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+                <element signature="e#2329#2677#0" expanded="false" />
+                <element signature="e#2703#2806#0" expanded="false" />
+                <element signature="e#2808#5238#1" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,13 +96,21 @@
         <option value="mocne" />
       </list>
     </option>
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/common/SQLhandle/Sql.py" />
+        <option value="$PROJECT_DIR$/common/SQLhandle/DatabaseInit.py" />
+        <option value="$PROJECT_DIR$/common/SQLhandle/MysqlUtil.py" />
+        <option value="$PROJECT_DIR$/common/SQLhandle/DataDrivenByMySQL.py" />
+        <option value="$PROJECT_DIR$/common/doSomethingWithElement.py" />
+        <option value="$PROJECT_DIR$/DriverInit/initAppiumDriver.py" />
         <option value="$PROJECT_DIR$/common/useADB.py" />
+        <option value="$PROJECT_DIR$/DriverInit/initSelendroidDriver.py" />
       </list>
     </option>
   </component>
@@ -73,9 +120,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1932" />
+    <option name="height" value="1037" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -96,6 +144,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,19 +155,34 @@
             <path>
               <item name="Tester_Code" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tester_Code" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tester_Code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tester_Code" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="testingApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tester_Code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tester_Code" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tester_Code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tester_Code" type="462c0819:PsiDirectoryNode" />
+              <item name="DriverInit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../handerCode" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -132,7 +196,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests for initSelendroidDriver.FindElementTest">
+    <configuration name="Unittests for initSelendroidDriver.FindElementTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DriverInit" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tester_Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;initSelendroidDriver.FindElementTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -280,6 +359,54 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
+    <configuration name="initAppiumDriver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DriverInit" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tester_Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DriverInit/initAppiumDriver.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="useADB" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tester_Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/useADB.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.useADB" />
+      <item index="1" class="java.lang.String" itemvalue="Python.initAppiumDriver" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for initSelendroidDriver.FindElementTest" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for initSelendroidDriver.FindElementTest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.initAppiumDriver" />
+        <item index="2" class="java.lang.String" itemvalue="Python.useADB" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -294,20 +421,50 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_initSelendroidDriver_FindElementTest - 2017.11.30 at 16h 40m 37s.xml">
+      <configuration name="Unittests for initSelendroidDriver.FindElementTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_initSelendroidDriver_FindElementTest - 2017.11.30 at 16h 42m 51s.xml">
+      <configuration name="Unittests for initSelendroidDriver.FindElementTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_initSelendroidDriver_FindElementTest - 2017.11.30 at 16h 44m 26s.xml">
+      <configuration name="Unittests for initSelendroidDriver.FindElementTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_initSelendroidDriver_FindElementTest - 2017.11.30 at 16h 46m 21s.xml">
+      <configuration name="Unittests for initSelendroidDriver.FindElementTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_initSelendroidDriver_FindElementTest - 2017.11.30 at 16h 47m 27s.xml">
+      <configuration name="Unittests for initSelendroidDriver.FindElementTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_initSelendroidDriver_FindElementTest - 2017.11.30 at 16h 48m 39s.xml">
+      <configuration name="Unittests for initSelendroidDriver.FindElementTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_initSelendroidDriver_FindElementTest - 2017.11.30 at 16h 49m 29s.xml">
+      <configuration name="Unittests for initSelendroidDriver.FindElementTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_initSelendroidDriver_FindElementTest - 2017.11.30 at 16h 50m 20s.xml">
+      <configuration name="Unittests for initSelendroidDriver.FindElementTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_initSelendroidDriver_FindElementTest - 2017.11.30 at 16h 51m 12s.xml">
+      <configuration name="Unittests for initSelendroidDriver.FindElementTest" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-30" width="1366" height="798" extended-state="0" />
+    <frame x="-7" y="0" width="1932" height="1037" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2408492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24757804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3633218" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -329,10 +486,72 @@
     <option name="LAST_COMMIT_MESSAGE" value="add Proj" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="18" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SOURCES/AIM.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DriverInit/initAppiumDriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+            <element signature="e#2329#2677#0" expanded="false" />
+            <element signature="e#2703#2806#0" expanded="false" />
+            <element signature="e#2808#5238#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/useADB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3780">
+          <caret line="126" column="68" lean-forward="true" selection-start-line="126" selection-start-column="68" selection-end-line="126" selection-end-column="68" />
+          <folding>
+            <element signature="e#107#312#0" expanded="false" />
+            <element signature="e#341#1294#0" expanded="false" />
+            <element signature="e#373#832#0" expanded="false" />
+            <element signature="e#1326#1338#0" expanded="false" />
+            <element signature="e#1437#2746#0" expanded="false" />
+            <element signature="e#4007#4085#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SOURCES/AIM.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Base/AdbCommon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/useADB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#107#312#0" expanded="false" />
+            <element signature="e#341#1294#0" expanded="false" />
+            <element signature="e#373#832#0" expanded="false" />
+            <element signature="e#1326#1338#0" expanded="false" />
+            <element signature="e#1437#2746#0" expanded="false" />
+            <element signature="e#4007#4085#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SOURCES/AIM.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -342,7 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="57" column="28" lean-forward="true" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -355,16 +573,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SOURCES/IMG_0127.JPG" />
     <entry file="file://$PROJECT_DIR$/Base/AdbCommon.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
+        <state relative-caret-position="1425">
           <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -373,11 +589,76 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/SQLhandle/Sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/SQLhandle/DatabaseInit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/SQLhandle/MysqlUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/SQLhandle/DataDrivenByMySQL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/doSomethingWithElement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2825">
+          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DriverInit/initAppiumDriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+            <element signature="e#2329#2677#0" expanded="false" />
+            <element signature="e#2703#2806#0" expanded="false" />
+            <element signature="e#2808#5238#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/useADB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="601">
+          <caret line="135" column="24" lean-forward="false" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="24" />
+          <folding>
+            <element signature="e#107#312#0" expanded="false" />
+            <element signature="e#341#1294#0" expanded="false" />
+            <element signature="e#373#832#0" expanded="false" />
+            <element signature="e#1326#1338#0" expanded="false" />
+            <element signature="e#1437#2746#0" expanded="false" />
+            <element signature="e#4007#4085#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DriverInit/initSelendroidDriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
