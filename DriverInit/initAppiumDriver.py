@@ -10,7 +10,7 @@ import common.useADB
 def start2test():
     driver = initAppiumWithInfo()
     time.sleep(5)
-    el = driver.find_element_by_android_uiautomator("new UiSelector().text('追书社区')")
+    el = driver.find_elements_by_class_name('android.widget.TextView')[1]
     el.click()
 
 def initAppiumWithInfo():
@@ -36,7 +36,6 @@ def initAppiumWithInfo():
 
     deviceName = os.popen('adb get-serialno').read().strip()
 
-
     desired_caps = {
         'platformName': 'Android',
         'platformVersion': deviceSystemVersion,
@@ -48,9 +47,9 @@ def initAppiumWithInfo():
         'appWaitActivity': appActivity,                          # 你想要等待启动的Android Activity名称
         'newCommandTimeout': 300,
         # 'browserName': '',
-        'automationName': 'appium',                     # 你想使用的自动化测试引擎：Appium (默认) 或 Selendroid(4.4以下可使用)
-        'unicodeKeyboard': 'True',                      # 支持中文输入，会自动安装Unicode 输入法。默认值为 false
-        "resetKeyboard": "True",                        # 在设定了 unicodeKeyboard 关键字的 Unicode 测试结束后，重置输入法到原有状态
+        'automationName': 'Appium',                     # 你想使用的自动化测试引擎：Appium (默认) 或 Selendroid(4.4以下可使用)
+        'unicodeKeyboard': True,                      # 支持中文输入，会自动安装Unicode 输入法。默认值为 false
+        "resetKeyboard": True,                        # 在设定了 unicodeKeyboard 关键字的 Unicode 测试结束后，重置输入法到原有状态
         'noReset': True,
         'noSign': True
     }
@@ -58,7 +57,6 @@ def initAppiumWithInfo():
     driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_capabilities=desired_caps, browser_profile=None, proxy=None, keep_alive=True)
     time.sleep(5)
     print('************************ start **************************')
-    driver.find_element_by_android_uiautomator('new')
     return driver
 
 def kill_appium():
