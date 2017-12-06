@@ -1,77 +1,90 @@
 # 资源监控软件 App
 Emmagee:
   AppName: Emmagee
+  latestVersion: 2.5.1
   PackageName: com.netease.qa.emmagee
   LanchableActivity: com.netease.qa.emmagee.activity.MainPageActivity
 
 # 追书神器 App
 zhuishushenqi:
   AppName: 追书神器
+  latestVersion: 2.14
   PackageName: com.ushaqi.zhuishushenqi
   LanchableActivity: com.ushaqi.zhuishushenqi.ui.SplashActivity
 
 # 爱贷网理财 App
 aidaiwangLiCai:
   AppName: 爱贷网理财
+  latestVersion: 0
   PackageName: com.rd.zdbao.adw
   LanchableActivity: com.aidai.adw.activity.StartPageActivity
 
 # 爱贷网借款 App
 adiawangJieKuan:
   AppName: 爱贷网借款
+  latestVersion: 0
   PackageName: com.rd.zdbao.adwjk
   LanchableActivity: com.rd.zdbao.adwjk.activity.SplashActivity
 
 # 爱贷网 App
 adiawang:
   AppName: 爱贷网
+  latestVersion: 0
   PackageName: cn.phaidai.loan
   LanchableActivity: com.rd.zdbao.adwjk.activity.SplashActivity
 
 # 淘宝 App
 adiawang:
   AppName: 淘宝
+  latestVersion: 0
   PackageName: com.taobao.taobao
   LanchableActivity: com.taobao.tao.welcome.Welcome
 
 # 微信 App
 adiawang:
   AppName: 微信
+  latestVersion: 0
   PackageName: com.tencent.mm
   LanchableActivity: com.tencent.mm.ui.LauncherUI
 
 # QQ App
 adiawang:
   AppName: QQ
+  latestVersion: 0
   PackageName: com.tencent.mobileqq
   LanchableActivity: com.tencent.mobileqq.activity.SplashActivity com.UCMobile.main.UCMobile
 
 # UC浏览器 App
 adiawang:
   AppName: UC浏览器
+  latestVersion: 0
   PackageName: com.UCMobile
   LanchableActivity: com.UCMobile.main.UCMobile
 
 # 微博 App
 adiawang:
   AppName: 微博
+  latestVersion: 0
   PackageName: com.sina.weibo
   LanchableActivity: com.sina.weibo.SplashActivity
 
 # 去哪儿旅行 App
 adiawang:
   AppName: 去哪儿旅行
+  latestVersion: 0
   PackageName: com.Qunar
   LanchableActivity: com.mqunar.splash.SplashActivity
 
 # 滴滴出行 App
 adiawang:
   AppName: 滴滴出行
+  latestVersion: 0
   PackageName: com.sdu.didi.psnger
   LanchableActivity: com.didi.sdk.app.DidiLoadDexActivity
 
 # 一点资讯 App
 adiawang:
   AppName: 一点资讯
+  latestVersion: 0
   PackageName: com.yidian.xiaomi
   LanchableActivity: com.yidian.xiaomi.ui.guide.UserGuideActivity
